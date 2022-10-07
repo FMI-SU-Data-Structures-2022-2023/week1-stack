@@ -1,4 +1,5 @@
-#include "string"
+#include <string>
+#include <vector>
 using namespace std;
 
 int task1( int number ) {
