@@ -14,13 +14,12 @@ TEST_CASE( "2: Task" ) {
     REQUIRE( task2("()") == true );
     REQUIRE( task2("{}()[]") == true );
     REQUIRE( task2("())") == false );
-    REQUIRE( task2("[)(]") == false );
-    
+    REQUIRE( task2("[)(]") == false ); 
 }
 
 
 TEST_CASE( "3: Task" ) {
-	std::vector<vector<int>> g;
+    std::vector<vector<int>> g;
     vector<int> first = {1, 2};
     vector<int> second = {0, 2, 3, 6};
     vector<int> empty;
@@ -44,7 +43,7 @@ TEST_CASE( "4: Task") {
 }
 
 TEST_CASE( "5: Task" ) {
-	std::vector<vector<int>> g;
+    std::vector<vector<int>> g;
     vector<int> first = {1, 2};
     vector<int> second = {0, 2, 3, 6};
     vector<int> empty;
@@ -62,8 +61,8 @@ TEST_CASE( "5: Task" ) {
 }
 
 TEST_CASE( "6: Task" ) {
-	REQUIRE( task6("a-c", "c-a") == false );
+    REQUIRE( task6("a-c", "c-a") == false );
     REQUIRE( task6("a+b-c", "a+(b-c)") == true );
     REQUIRE( task6("a-(b-(c-d+e))", "a-b+c-d+e") == true );
-	REQUIRE( task6("a+c-d", "a-d+c") == false );
+    REQUIRE( task6("a+c-d", "a-d+c") == false );
 }
