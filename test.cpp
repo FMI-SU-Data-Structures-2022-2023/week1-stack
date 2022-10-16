@@ -55,9 +55,9 @@ TEST_CASE( "5: Task" ) {
     g.push_back(empty); // 5
     g.push_back(empty); // 6
     g.push_back(empty); // 7
-    REQUIRE( task3(g, 0, 6) == true );
-    REQUIRE( task3(g, 5, 6) == false );
-    REQUIRE( task3(g, 1, 3) == true );
+    REQUIRE( task5(g, 0, 6) == true );
+    REQUIRE( task5(g, 5, 6) == false );
+    REQUIRE( task5(g, 1, 3) == true );
 }
 
 TEST_CASE( "6: Task" ) {
